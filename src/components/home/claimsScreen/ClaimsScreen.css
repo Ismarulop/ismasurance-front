@@ -1,0 +1,31 @@
+.claim-screen{
+    padding: 20px;
+    border: 2px solid rebeccapurple;
+    box-shadow: 0 5px 5px 0 rgba(105, 0, 98, 0.705), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.header-claim-screen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header-claim-screen li{
+    list-style: none;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.claims-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.claims-list li{
+    list-style: none;
+    
+}
