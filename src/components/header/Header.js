@@ -9,7 +9,7 @@ function Header() {
       <Navbar>
         <Container>
           <Navbar.Brand href="#home" >
-          <img src={require('C:/dev/ismasurance/front/ismasurance/src/img/logoIsmasurance.png')} alt= "logo"/>
+          <img src={require('C:/dev/personal projects/ismasurance/front/ismasurance/src/img/logoIsmasurance.png')} alt= "logo"/>
           </Navbar.Brand>
         </Container>
       </Navbar>

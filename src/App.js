@@ -1,28 +1,29 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/home/Home';
-import SignInForm from './components/sign in/SignInForm';
 import Header from './components/header/Header';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SignIn from './pages/SignIn';
+import { Provider } from 'react-redux';
+import { Container } from 'react-bootstrap';
+import store from './store';
+import checkForToken from "./helpers/checkForToken";
 
 
+checkForToken();
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-
+    <Provider store={store}>
+      <Router>
+        {/* <Container> */}
         <Routes>
-
+        <Route exact path='/' element={<SignIn />}></Route>
+          <Route exact path='/signin' element={<SignIn />}></Route>
           <Route exact path='/home' element={<Home />}></Route>
-
-          <Route exact path='/' element={<SignInForm />}></Route>
-
         </Routes>
-      </div>
-    </Router>
+        {/* </Container> */}
+      </Router>
+    </Provider>
 
 
   );
